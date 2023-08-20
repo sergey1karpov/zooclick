@@ -25,8 +25,8 @@ return new class extends Migration
             $table->unsignedBigInteger('repost_id')->nullable();
             $table->timestamps();
 
-            $table->foreign('channel_id')->references('id')->on('channel');
-            $table->foreign('repost_id')->references('id')->on('theme');
+            $table->foreign('channel_id')->references('id')->on('channels');
+            $table->foreign('repost_id')->references('id')->on('themes');
         });
     }
 
